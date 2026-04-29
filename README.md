@@ -9,6 +9,10 @@
 ![Redux Toolkit](https://img.shields.io/badge/Redux_Toolkit-2-764ABC?style=for-the-badge&logo=redux&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-7-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
+![GitHub Stars](https://img.shields.io/github/stars/elfajome/FurniCraft?style=for-the-badge)
+![GitHub Forks](https://img.shields.io/github/forks/elfajome/FurniCraft?style=for-the-badge)
+![GitHub Issues](https://img.shields.io/github/issues/elfajome/FurniCraft?style=for-the-badge)
+![License](https://img.shields.io/github/license/elfajome/FurniCraft?style=for-the-badge)
 
 </div>
 
@@ -24,9 +28,9 @@
 
 ## Preview
 
-> Replace the image below with a real screenshot from your project UI.
+Real project visual from the app assets:
 
-![FurniCraft Preview](https://via.placeholder.com/1400x750.png?text=FurniCraft+Preview+Screenshot)
+![FurniCraft Home Preview](./public/assets/images/heroImage.jpg)
 
 ---
 
@@ -71,6 +75,13 @@ It includes product listing, details, wishlist, cart flow, comparison, checkout,
 - **Service Layer Pattern:** API calls isolated in `src/services` for scalability and clean page code
 - **Central Store + Predictable State Flow:** Single source of truth with controlled updates
 - **Route-Driven Modular Structure:** Clear page-level routing with React Router
+- **Singleton Pattern:** Central API client instance is created once in `src/api/client.js` via `getApiClient()` and reused everywhere through exported `api`
+- **Facade Pattern:** Unified app-facing gateway in `src/services/index.js` via `servicesFacade` that exposes grouped methods (`products`, `auth`, `cart`, `wishlist`) while hiding lower-level service details
+
+### How Singleton and Facade are used in this codebase
+
+- **Singleton (`src/api/client.js`):** `apiClientSingleton` caches one immutable HTTP client object (`Object.freeze(createApiClient())`), ensuring consistent request behavior and one source for headers/error handling
+- **Facade (`src/services/index.js`):** `servicesFacade` provides a clean interface consumed by feature layers, so pages/slices avoid direct coupling to internal service files and can evolve with minimal refactoring
 
 ---
 
