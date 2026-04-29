@@ -148,6 +148,8 @@ npm run preview
 - `npm run build` - Build production bundle
 - `npm run preview` - Preview production build locally
 - `npm run lint` - Run ESLint checks
+- `npm run test` - Run unit/integration tests once
+- `npm run test:watch` - Run tests in watch mode
 
 ---
 
@@ -155,7 +157,8 @@ npm run preview
 
 - [ ] Add real backend integration and authentication persistence
 - [ ] Add order history in account section
-- [ ] Add unit/integration tests
+- [x] Add unit/integration tests
+- [ ] Deploy and link live demo
 
 ---
 
