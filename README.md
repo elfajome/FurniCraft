@@ -16,9 +16,9 @@
 
 ## Live Demo
 
-> Coming soon...
+**Production URL:** [furni-craft-4jd13fny3-elfajomes-projects.vercel.app](https://furni-craft-4jd13fny3-elfajomes-projects.vercel.app)
 
-**Demo URL Placeholder:** `https://your-live-demo-link-here`
+> Deployed with Vercel for fast global delivery.
 
 ---
 
@@ -47,6 +47,7 @@ It includes product listing, details, wishlist, cart flow, comparison, checkout,
 - Checkout and account flows ready for backend integration
 - Fully componentized layout with reusable UI parts
 - Responsive design patterns for desktop and mobile
+- Centralized API/service layer and clean Redux data flow
 
 ---
 
@@ -59,6 +60,17 @@ It includes product listing, details, wishlist, cart flow, comparison, checkout,
 - **Styling:** Tailwind CSS 4
 - **Icons:** React Icons
 - **Linting:** ESLint 9
+
+---
+
+## Architecture & Design Patterns
+
+- **Component-Based Architecture:** Reusable UI and layout components for maintainability
+- **Container/Presentation Separation:** Pages orchestrate logic, UI components focus on display
+- **Redux Slice Pattern:** Domain-based slices (`auth`, `products`, `cart`, `wishlist`)
+- **Service Layer Pattern:** API calls isolated in `src/services` for scalability and clean page code
+- **Central Store + Predictable State Flow:** Single source of truth with controlled updates
+- **Route-Driven Modular Structure:** Clear page-level routing with React Router
 
 ---
 
@@ -88,7 +100,7 @@ FurniCraft/
 ### 1) Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/FurniCraft.git
+git clone https://github.com/elfajome/FurniCraft.git
 cd FurniCraft
 ```
 
@@ -151,8 +163,8 @@ Contributions, ideas, and suggestions are welcome.
 
 ## Author
 
-**Your Name**  
-GitHub: [@your-username](https://github.com/your-username)
+**Ibrahim Farouk**  
+GitHub: [@elfajome](https://github.com/elfajome)
 
 ---
 
