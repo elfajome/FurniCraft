@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme{
+  /* FurniCraft-ish palette */
+  --color-primary: #b88e2f;
+  --color-primary-hover: #9d7828;
+  --color-primary-light: #fff3e3;
+  --color-secondary: #242424;
+  --color-accent: #e97171;
+
+  /* Surfaces and text */
+  --color-surface: #ffffff;
+  --color-surface-alt: #f9f1e7;
+  --color-background: #ffffff;
+  --color-text: #242424;
+  --color-text-muted: #898989;
+
+  /* Borders and shadows */
+  --color-border: #e7e7e7;
+  --color-border-focus: #b88e2f;
+
+  /* Used in tags and secondary buttons */
+  --color-main: #b88e2f;
+}
+
+@layer base {
+  html {
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+  body {
+    @apply bg-surface text-text antialiased;
+  }
+
+  a[href],
+  button:not(:disabled),
+  [role='button'],
+  input[type='button'],
+  input[type='submit'],
+  input[type='reset'],
+  summary {
+    cursor: pointer;
+  }
+
+  button:disabled,
+  input:disabled {
+    cursor: not-allowed;
+  }
+
+  :focus-visible {
+    outline: 1px solid var(--color-primary);
+    outline-offset: 1px;
+  }
+
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible,
+  button:focus-visible,
+  a:focus-visible {
+    outline-color: var(--color-primary);
+  }
+
+  .logo-wordmark {
+    font-family: 'Cormorant Garamond', ui-serif, Georgia, serif;
+    font-weight:bold;
+    font-size: 1.7rem;
+    line-height: 1;
+    letter-spacing: 0.04em;
+    color: var(--color-text);
+  }
+}
