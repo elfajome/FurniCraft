@@ -30,7 +30,8 @@
 
 Real project visual from the app assets:
 
-![FurniCraft Home Preview](./public/assets/images/heroImage.jpg)
+<img width="1857" height="897" alt="Screenshot 2026-04-29 183239" src="https://github.com/user-attachments/assets/97515c1a-7168-46bd-948f-c131ad1d9823" />
+
 
 ---
 
