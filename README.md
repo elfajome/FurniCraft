@@ -153,10 +153,8 @@ npm run preview
 ## Roadmap
 
 - [ ] Add real backend integration and authentication persistence
-- [ ] Add product search and advanced filtering
 - [ ] Add order history in account section
 - [ ] Add unit/integration tests
-- [ ] Deploy and link live demo
 
 ---
 
@@ -181,5 +179,4 @@ GitHub: [@elfajome](https://github.com/elfajome)
 
 ## License
 
-This project is currently unlicensed.  
-You can add an `MIT` license by creating a `LICENSE` file.
+This project is currently unlicensed.
