@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "test:perf": "vitest run src/performance --reporter=verbose"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",

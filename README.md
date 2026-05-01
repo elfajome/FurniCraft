@@ -150,6 +150,27 @@ npm run preview
 - `npm run lint` - Run ESLint checks
 - `npm run test` - Run unit/integration tests once
 - `npm run test:watch` - Run tests in watch mode
+- `npm run test:perf` - Run performance-focused tests for Redux cart operations
+
+---
+
+## Testing Strategy
+
+- **Unit tests:** validate utility and service behavior (example: formatting and storage safety)
+- **Integration tests:** validate Redux slice behavior end-to-end through actions and selectors
+- **Performance tests:** stress-test cart state operations with larger datasets to detect regressions early
+
+### Run performance tests
+
+```bash
+npm run test:perf
+```
+
+Current performance suite targets cart reducer hotspots:
+
+- bulk item insertion
+- bulk quantity updates
+- bulk item removals
 
 ---
 
